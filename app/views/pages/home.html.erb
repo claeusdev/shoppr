@@ -1,0 +1,27 @@
+
+<div class="main-banner">
+  <div class="banner-elements">
+    <h3>Navbar example</h3>
+    <p>Buy anything in Ghana from Ghana.</p>
+    <p>To see the difference between static and fixed top navbars, just scroll.</p>
+  </div>
+</div>
+<section>
+  <div class="container">
+    <div class="page-header">
+      <h2>Shop by Category</h2>
+    </div>
+    <div class="row">
+      <% @categories.each do |category| %>
+        <div class="col-md-3">
+          <div class="thumbnail">
+
+            <div class="caption">
+              <h3 class="cat-name"><%= link_to category.name, category %></h3>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>

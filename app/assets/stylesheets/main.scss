@@ -1,0 +1,36 @@
+/***********************************
+COlors
+************************************/
+$border: #dddddd;
+
+
+
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.roof {
+  margin-top: 5.3rem;
+}
+
+.main-banner {
+  margin-top: 5rem;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)
+  ),url('feet.jpg');
+  height: 20rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .banner-elements {
+    color: white;
+    text-align: center;
+  }
+}
+
+.page-header {
+  text-align: center;
+  border-bottom: 1px solid $border;
+}
