@@ -2,6 +2,12 @@
 COlors
 ************************************/
 $border: #dddddd;
+$white: #FFFFFF;
+$dark: #7c7c7c;
+$light: #f4f4f4;
+$highlight: #8bc6db;
+$border: #E9E9E9;
+$claeusRed: #f61616;
 
 
 
@@ -12,6 +18,14 @@ $border: #dddddd;
 
 body {
   background: #ededed;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
 }
 
 .roof {
@@ -37,4 +51,69 @@ body {
 .page-header {
   text-align: center;
   border-bottom: 1px solid $border;
+}
+
+/*****************************
+		FOOTER
+******************************/
+
+.bottom-section {
+  background-color: #303945;
+  min-height: 200px;
+  padding: 5%;
+  color: #8c9098;
+	margin-top: 2rem;
+  margin-bottom: 0;
+  a {
+      display: block;
+      font-size: 13px;
+      color: #FFFFFF;
+      font-weight: 500;
+  }
+  .foot-note {
+    margin: 3rem auto;
+    text-align: center;
+  }
+}
+
+.social-links {
+  li {
+    display: inline-block;
+    padding: 1rem;
+  }
+}
+/*****************************
+		BUTTONS
+******************************/
+
+.button-default {
+	padding: .7rem;
+	border: 1px solid white;
+	margin-right: 1rem;
+	margin-top: .5rem;
+	margin-bottom: .5rem;
+	background-color: $claeusRed;
+	color: #FFFFFF;
+}
+
+.button-cart, .button-other {
+	padding: 3px 6px;
+	width: 120px;;
+}
+
+.button-contact {
+	margin-top: .578rem;
+	border: 1.5px solid white;
+	background-color: #ff4444;
+	color: #FFFFFF;
+	padding: 1rem;
+	width: 245px;
+}
+
+.button-other {
+	border: 2px solid $claeusRed;
+	background-color: #FFFFFF;
+	color: $claeusRed;
+	padding: 1rem;
+
 }

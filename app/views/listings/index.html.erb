@@ -4,14 +4,21 @@
 
 <div class="row">
   <% @listings.each do |listing| %>
-    <div class="col-md-3">
-      <div class="thumbnail">
-        <%= link_to image_tag(listing.image.thumb), listing %>
-        <div class="caption">
-          <h3 class="cat-name"><%= link_to listing.name, category %></h3>
+  <div class="col-md-2">
+          <div class="thumbnail">
+            <%= link_to image_tag(listing.image), listing %>
+            <div class="caption">
+              <h3><%= link_to listing.name, listing %></h3>
+              <span class="left" style="text-transform: capitalize;"><%= link_to listing.user.username, user_path(listing.user) %></span>
+              <span class="amount right"><%= number_to_currency(listing.price) %></span>
+              <br>
+              <!-- <% if (user_signed_in?) && (current_user == listing.user) %>
+                <%= link_to "Edit", edit_listing_path(listing), class: "fa fa-retweet"%>
+                <%= link_to "Delete", listing, class: "fa fa-trash-o", method: :get, data: {confirm: "Are you sure?"} %>
+              <% end %> -->
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
   <% end %>
 </div>
 
