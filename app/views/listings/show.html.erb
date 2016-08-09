@@ -1,21 +1,24 @@
 <div class="roof">
   <div class="container">
       <div class="row">
+        <h4 class="page-header">Sold by <%= link_to @listing.user.username, user_path %></h4>
         <div class="col-md-4">
           <div class="thumbnail">
-            <%= image_tag @listing.image %>
+            <%= image_tag @listing.image.large %>
           </div>
         </div>
-        <div class="col-md-6"><br>
+        <div class="col-md-6">
           <span class="label label-success">
             <%=  @listing.category.name %>
-          </span><br ><br>
+          </span><br >
           <span class="label label-danger"><%= @listing.id %></span>
           <h3><%= @listing.name %></h3>
           <h4> <%= number_to_currency(@listing.price) %></h4>
           <label>Description:</label>
           <p  class= "well item-desc "><%= @listing.description%></p>
-          <i class="fa fa-map-marker" aria-hidden="true" style="font-size: 1.5rem;"> <%= @listing.city %></i><br>
+          <p>
+             <i class="fa fa-map-marker" aria-hidden="true" style="font-size: 1.5rem;"> <%= @listing.city %></i>
+          </p>
           <button type="button" name="button" class="btn btn-primary">Contact Seller</button>
           <button type="button" name="button" class="btn btn-primary">Add to cart</button>
 

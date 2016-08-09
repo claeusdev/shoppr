@@ -1,0 +1,38 @@
+<br><br><br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="box">
+        <h5 class="page-header">Details</h5>
+      <h4>
+        <%=  @user.first_name %> <%=  @user.last_name %>
+      </h4>
+      <p>
+      <%= link_to @user.gender %>
+      </p>
+      <p>
+      <%= link_to @user.created_at %>
+      </p>
+      <p>
+        Following
+      </p>
+      <p>
+        Followers
+      </p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="box">
+        <h5 class="page-header">Your messages</h5>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="box">
+        <h5 class="page-header">Shop</h5>
+        <p>
+          <%= link_to "View store", class: "btn btn-danger" %>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
