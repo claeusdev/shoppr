@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'pages/help'
 
   get 'pages/advertise'
+  get 'user/:id' => 'pages#profile'
 
   devise_for :users
   resources :listings

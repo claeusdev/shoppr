@@ -13,8 +13,9 @@
           <ul class="nav navbar-nav navbar-right">
             <% if user_signed_in? %>
               <!-- true -->
+              <li><%= link_to "Add Listing", new_listing_path %></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Profile <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= current_user.username %><span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="#">View Profile</a></li>
                   <li><a href="#">Edit Profile</a></li>
@@ -25,9 +26,11 @@
                   <li><a href="#">Settings</a></li>
                 </ul>
               </li>
+              <li><%= link_to "Cart" %></li>
             <% else %>
               <li><%= link_to "Log In", new_user_session_path %></li>
               <li><%= link_to "Get Started", new_user_registration_path, class: "button-default" %></li>
+              <li><%= link_to "Cart" %></li>
             <% end %>
           </ul>
         </div><!--/.nav-collapse -->
