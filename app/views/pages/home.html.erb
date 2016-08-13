@@ -1,27 +1,66 @@
 
 <div class="main-banner">
   <div class="banner-elements">
-    <h3>Navbar example</h3>
-    <p>Buy anything in Ghana from Ghana.</p>
-    <p>To see the difference between static and fixed top navbars, just scroll.</p>
+    <h3>Discover a world of Vendors and Buyers.</h3>
+    <p>
+      Home of 50000 Vendors.
+    </p>
   </div>
 </div>
 <section>
   <div class="container">
-    <div class="page-header">
-      <h2>Shop by Category</h2>
-    </div>
     <div class="row">
-      <% @categories.each do |category| %>
-        <div class="col-md-3">
-          <div class="thumbnail">
-
-            <div class="caption">
-              <h3 class="cat-name"><%= link_to category.name, category %></h3>
+      <div class="col-md-4">
+        <div class="card-lg">
+          <h2 class="page-header">Shop by Category</h2>
+          <div class="cat-list">
+            <% @categories.each do |category| %>
+              <li><%= category.name %></li>
+            <% end %>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-lg">
+          <h2 class="page-header">Featured Shop</h2>
+          <div class="ftd-shop">
+            <div class="round-image-100">
+              <img src="#" alt="" />
+              <h4>Janesis Bakery</h4>
+              <p>
+                Location  |  Ratings
+              </p>
+              <p>
+                Orders count
+              </p>
             </div>
           </div>
         </div>
-      <% end %>
+      </div>
+      <div class="col-md-4">
+        <div class="card-lg">
+          <h2 class="page-header">Deal of the Day</h2>
+          <div class="round-image-100">
+            <img src="#" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card-lg">
+          <h2 class="page-header">Featured products</h2>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="card-lg">
+          <h2 class="page-header">Top rated</h2>
+        </div>
+      </div>
     </div>
   </div>
 </section>

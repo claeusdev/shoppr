@@ -1,13 +1,15 @@
 Rails.application.routes.draw do
   get 'users/show'
 
-  get 'pages/home'
+  get '/help' => "pages#help"
 
-  get 'pages/contact'
+  get '/advertise' => "pages#advertise"
 
-  get 'pages/help'
+  get '/contact' => "pages#contact"
 
-  get 'pages/advertise'
+  get '/home' => "pages#home"
+
+  get '/sell' => "pages#sell"
 
 
   devise_for :users

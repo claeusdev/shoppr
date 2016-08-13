@@ -13,11 +13,7 @@ $claeusRed: #f61616;
 
 
 * {
-  font-family: 'Open Sans', sans-serif;
-}
-
-body {
-  background: #ededed;
+  font-family: 'Raleway', sans-serif;
 }
 
 .right {
@@ -28,31 +24,48 @@ body {
   float: left;
 }
 
-.roof {
-  margin-top: 5.3rem;
-}
+
+.clearfix:before,
+ .clearfix:after {
+   display: table;
+   content: "";
+ }
+
+ .clearfix:after {
+   clear: both;
+ }
 
 .main-banner {
-  margin-top: 5rem;
+  margin: 5rem auto 1rem;
   background-image: linear-gradient(
     rgba(0, 0, 0, 0.6),
     rgba(0, 0, 0, 0.6)
   ),url('feet.jpg');
-  height: 20rem;
+  height: 10rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   .banner-elements {
     color: white;
     text-align: center;
+    max-width: 80%;
+    margin: 2.5rem auto;
+    padding-top: 1rem;
   }
 }
 
 .page-header {
   text-align: center;
   border-bottom: 1px solid $border;
+  font-weight: bold;
+  margin-top: 1rem;
 }
 
+.header {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 1.5rem;
+}
 /*****************************
 		FOOTER
 ******************************/
@@ -64,12 +77,16 @@ body {
   color: #8c9098;
 	margin-top: 2rem;
   margin-bottom: 0;
-  a {
-      display: block;
-      font-size: 13px;
-      color: #FFFFFF;
-      font-weight: 500;
+  li {
+    list-style: none;
+    a {
+        display: block;
+        font-size: 13px;
+        color: #FFFFFF;
+        font-weight: 500;
+    }
   }
+
   .foot-note {
     margin: 3rem auto;
     text-align: center;
@@ -80,6 +97,7 @@ body {
   li {
     display: inline-block;
     padding: 1rem;
+    color: white;
   }
 }
 /*****************************
